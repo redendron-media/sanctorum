@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 const PricingCard: React.FC<PricingCardProps> = ({ title, price, amenities }) => {
   return (
     <Card  className={cn(
-        "w-[222px] p-5 flex flex-col gap-6 rounded-lg h-fit",
+        "w-[222px] p-5 flex flex-col gap-6 rounded-lg h-fit shadow-none",
         title === "Monthly" ? "bg-sec" : "bg-white"
       )}>
       <div className="flex flex-col  divide-y divide-dashed divide-textdark">
@@ -33,7 +33,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, amenities }) =>
         ))}
       </div>
       <Button>
-        <p className="uppercase text-base px-6">book your seat</p>
+        <p className="font-im_fell text-base px-6">Book your seat</p>
       </Button>
     </Card>
   );

@@ -24,7 +24,7 @@ export default {
       },
       fontFamily: {
         im_fell: ['var(--font-im)', 'serif'],
-        im_fell_italic: ['var(--font-im-italic)', 'serif']
+        im_fell_pika: ['var(--font-im-italic)', 'serif']
       }
     },
   },
