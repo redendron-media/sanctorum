@@ -12,7 +12,7 @@ interface TabProps {
   defaultActiveTab?: string;
 }
 
-export const TabSelector: React.FC<TabProps> = ({ 
+const TabSelector: React.FC<TabProps> = ({ 
   tabs, 
   activeTab, 
   onTabChange, 
@@ -56,3 +56,5 @@ export const TabSelector: React.FC<TabProps> = ({
     </div>
   );
 };
+
+export default TabSelector;

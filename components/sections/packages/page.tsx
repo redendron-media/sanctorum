@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import PricingCard from "../../pricing-card/page";
 import { individual, team } from "@/constants/page";
 import { Carousel, CarouselContent, CarouselItem } from "../../ui/carousel";
-import { TabSelector } from "../../tab/page";
+import TabSelector from "../../tab/page";
 
 const Packages = () => {
   const [activeTab, setActiveTab] = useState("individual");
@@ -36,21 +36,21 @@ const Packages = () => {
             </CarouselContent>
           </Carousel>
         )}
-        {activeTab ==="team" && (
-              <Carousel>
-              <CarouselContent className="ml-10">
-                {team.map((plan, index) => (
-                  <CarouselItem key={index}>
-                    <PricingCard
-                      title={plan.title}
-                      price={plan.price}
-                      amenities={plan.amenities}
-                      alternate={plan.alternate}
-                    />
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
+        {activeTab === "team" && (
+          <Carousel>
+            <CarouselContent className="ml-10">
+              {team.map((plan, index) => (
+                <CarouselItem key={index}>
+                  <PricingCard
+                    title={plan.title}
+                    price={plan.price}
+                    amenities={plan.amenities}
+                    alternate={plan.alternate}
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         )}
       </div>
     </section>
