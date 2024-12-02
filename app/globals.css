@@ -6,20 +6,22 @@
 
 @layer base {
 
-
+  .button-text {
+    @apply font-im_fell text-bas
+  }
 
   .body-italic {
     @apply text-base font-im_fell_pika italic ;
   }
   .mobile6 {
-    @apply text-[18px] leading-[27px];
+    @apply text-[18px] leading-[27px] font-im_fell;
   }
 
   .mobile4 {
-    @apply text-2xl leading-6;
+    @apply text-2xl leading-6 font-im_fell;
   }
   .mobile3 {
-    @apply text-[32px] leading-[48px];
+    @apply text-[32px] leading-[48px] font-im_fell;
   }
 
   /* Chrome, Safari, Edge, Opera */
