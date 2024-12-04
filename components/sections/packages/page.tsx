@@ -19,10 +19,10 @@ const Packages = () => {
         onTabChange={setActiveTab}
       />
 
-      <div className="overflow-hidden w-screen py-4">
+      <div className="overflow-hidden w-screen py-4 lg:hidden">
         {activeTab === "individual" && (
           <Carousel>
-            <CarouselContent className="ml-10">
+            <CarouselContent className="mx-10">
               {individual.map((plan, index) => (
                 <CarouselItem key={index}>
                   <PricingCard
@@ -51,6 +51,35 @@ const Packages = () => {
               ))}
             </CarouselContent>
           </Carousel>
+        )}
+      </div>
+
+      <div className="lg:flex flex-row gap-4 items-center justify-center hidden py-7">
+        {activeTab === "individual" && (
+          <>
+            {individual.map((plan, index) => (
+              <PricingCard
+                key={index}
+                title={plan.title}
+                price={plan.price}
+                amenities={plan.amenities}
+                alternate={plan.alternate}
+              />
+            ))}
+          </>
+        )}
+        {activeTab === "team" && (
+          <>
+            {team.map((plan, index) => (
+              <PricingCard
+                key={index}
+                title={plan.title}
+                price={plan.price}
+                amenities={plan.amenities}
+                alternate={plan.alternate}
+              />
+            ))}
+          </>
         )}
       </div>
     </section>

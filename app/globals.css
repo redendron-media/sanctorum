@@ -6,8 +6,8 @@
 
 @layer base {
 
-  .button-text {
-    @apply font-im_fell text-bas
+  .buttontext {
+    @apply font-im_fell text-base
   }
 
   .body-italic {

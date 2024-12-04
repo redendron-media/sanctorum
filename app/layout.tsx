@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { IM_Fell_English_SC,IM_Fell_DW_Pica } from "next/font/google";
 import Header from "@/components/header/page";
+import FloatingButton from "@/components/floating-button/page";
 
 const im_fell = IM_Fell_English_SC({
   weight: [ "400"],
@@ -35,6 +36,7 @@ export default function RootLayout({
         className={`${im_fell_pika.className} ${im_fell.variable} antialiased`}
       >
         <Header/>
+        <FloatingButton/>
         {children}
       </body>
     </html>
