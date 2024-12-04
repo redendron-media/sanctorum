@@ -18,10 +18,10 @@
   }
 
   .mobile4 {
-    @apply text-2xl leading-6 font-im_fell;
+    @apply text-2xl lg:text-3xl leading-6 font-im_fell;
   }
   .mobile3 {
-    @apply text-[32px] leading-[48px] font-im_fell;
+    @apply text-[32px] leading-[48px] font-im_fell lg:text-5xl;
   }
 
   /* Chrome, Safari, Edge, Opera */

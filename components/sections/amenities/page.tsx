@@ -13,7 +13,7 @@ const Amenities = () => {
         <CarouselContent className="mx-10">
           {amenities.map((amenity, index) => (
             <CarouselItem key={index} className="pl-7">
-              <div className="flex flex-col gap-3 w-[107px]">
+              <div className="flex flex-col gap-3 ">
                 <div className="flex gap-1">
                   <Icon
                     icon="mingcute:check-fill"
@@ -21,7 +21,7 @@ const Amenities = () => {
                   />
                   <h4 className="mobile4 text-white">{amenity.title}</h4>
                 </div>
-                <p className="text-white font-im_fell_pika leading-[18px] text-xs">
+                <p className="text-white font-im_fell_pika leading-[18px] text-xs w-[107px]">
                   {amenity.desc}
                 </p>
               </div>
@@ -32,15 +32,15 @@ const Amenities = () => {
 
       <div className="hidden lg:flex gap-7 justify-center items-start">
         {amenities.map((amenity, index) => (
-          <div className="flex flex-col gap-3 w-[160px] justify-center" key={index}>
-            <div className="flex gap-1">
+          <div className="flex flex-col gap-3  justify-center" key={index}>
+            <div className="flex gap-1 items-center">
               <Icon
                 icon="mingcute:check-fill"
                 className="text-[#D9D9D9] text-xl"
               />
               <h4 className="mobile4 text-white">{amenity.title}</h4>
             </div>
-            <p className="text-white font-im_fell_pika leading-[18px] text-sm">
+            <p className="text-white font-im_fell_pika leading-[18px] text-base w-[150px]">
               {amenity.desc}
             </p>
           </div>
