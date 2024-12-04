@@ -3,7 +3,7 @@ import React from "react";
 
 const Events = () => {
   return (
-    <section className="bg-surface gap-4 px-10 py-[72] flex flex-col justify-center">
+    <section className="bg-surface gap-4 px-10 py-[72px] flex flex-col justify-center">
       <h1 className=" text-textdark text-center mobile3">Events</h1>
       <div className="flex flex-col gap-7 items-center">
         <p className="text-textdark-300 text-center text-balance line-clamp-2">
