@@ -7,7 +7,7 @@ import Packages from "@/components/sections/packages/page";
 
 export default function Home() {
   return (
-    <main className="w-screen overflow-hidden">
+    <main className="w-screen">
       <Hero />
       <Packages />
       <MeetingRoom/>
