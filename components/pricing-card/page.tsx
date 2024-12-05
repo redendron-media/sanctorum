@@ -17,7 +17,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, amenities,alter
       <div className="flex flex-col  divide-y divide-dashed divide-textdark">
         <h6 className="mobile6 text-textdark pb-4">{title}</h6>
         <div className="flex flex-col gap-1 pt-4">
-          <h3 className="mobile3">Rs.{formatIndianPrice(Number(price))}</h3>
+          <h3 className="mobile3 lg:text-4xl">Rs.{formatIndianPrice(Number(price))}</h3>
           <p className="font-im_fell_italic text-textdark-300">
           {
   title === "Daily"

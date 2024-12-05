@@ -95,27 +95,27 @@ export const meetingRoom: PricingCardProps[] = [
 export const amenities = [
   {
     title:'Library',
-    icon: '',
+    icon: 'ph:books-duotone',
     desc: 'A peaceful corner stacked with handpicked reads'
   },
   {
     title:'Coffee',
-    icon: '',
+    icon: 'tabler:coffee',
     desc: 'To keep you going'
   },
   {
     title:'Wifi',
-    icon: '',
+    icon: 'uil:wifi',
     desc: 'High speed internet'
   },
   {
     title:'Mic',
-    icon: '',
+    icon: 'mingcute:mic-line',
     desc: 'Professional audio equipment when you need it'
   },
   {
     title:'Meeting Rooms',
-    icon: '',
+    icon: 'guidance:meeting-room',
     desc: 'Privacy and quiet for focused work'
   },
 ]

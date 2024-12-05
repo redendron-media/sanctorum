@@ -39,7 +39,7 @@ const TabSelector: React.FC<TabProps> = ({
           className={`
             inline-flex items-center justify-center 
             whitespace-nowrap text-mobile6 font-im_fell 
-            px-4 py-3 transition-all 
+            px-4 py-3 transition-all hover:bg-primary hover:text-sec
             focus-visible:outline-none 
             disabled:pointer-events-none 
             disabled:opacity-50

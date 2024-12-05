@@ -3,11 +3,20 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Icon } from "@iconify/react";
 import { Button } from '../ui/button';
+import { cn } from '@/lib/utils';
 
-const WaitlistForm = () => {
+interface WaitlistFormProps {
+  orientation?: 'vertical' | 'horizontal'
+}
+
+
+const WaitlistForm: React.FC<WaitlistFormProps> = ({ 
+  orientation = 'vertical' 
+}) => {
   return (
-    <form action="" className='flex flex-col gap-2'>
-    <div className="space-y-2 lg:col-span-1">
+    <form action="" className={cn('flex flex-col gap-2 items-center')}>
+      <div className={cn('', orientation == 'vertical' ? 'flex-col gap-2 flex' : 'lg:flex lg:flex-row lg:items-end lg:gap-6 hidden' )}>
+      <div className="space-y-2 lg:col-span-1">
       <Label htmlFor="input-01" aria-required className='text-textdark-200'>Name</Label>
       <div className="relative">
         <Input required id="input-01" className="peer bg-surface border-textdark-300 py-1" placeholder="Enter your name here" type="text" />
@@ -33,7 +42,9 @@ const WaitlistForm = () => {
         </div>
       </div>
     </div>
-    <Button type='submit' className='py-3 mt-8'>Get your free 1 day pass</Button>
+      </div>
+   
+    <Button type='submit' className={cn('py-3 mt-8 lg:w-fit', orientation == 'vertical'? "": 'hidden lg:flex')}>Get your free 1 day pass</Button>
     </form>
   )
 }

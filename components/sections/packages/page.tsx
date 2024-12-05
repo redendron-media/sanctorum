@@ -54,7 +54,7 @@ const Packages = () => {
         )}
       </div>
 
-      <div className="lg:flex flex-row gap-4 items-center justify-center hidden py-7">
+      <div className="lg:flex flex-row gap-8 items-center justify-center hidden py-7">
         {activeTab === "individual" && (
           <>
             {individual.map((plan, index) => (

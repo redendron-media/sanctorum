@@ -24,7 +24,7 @@ const MeetingRoom = () => {
           </CarouselContent>
         </Carousel>
       </div>
-      <div className="hidden lg:flex flex-row gap-4 py-7 justify-center items-center">
+      <div className="hidden lg:flex flex-row gap-8 py-7 justify-center items-center">
         {meetingRoom.map((plan, index) => (
           <PricingCard
             key={index}
