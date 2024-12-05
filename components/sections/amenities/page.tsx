@@ -33,9 +33,9 @@ const Amenities = () => {
         </CarouselContent>
       </Carousel>
 
-      <div className="hidden lg:flex gap-7 justify-center items-start">
+      <div className="hidden lg:flex gap-1 justify-center items-start">
         {amenities.map((amenity, index) => (
-          <div className="flex flex-row gap-2 h-full justify-center" key={index}>
+          <div className="flex flex-row gap-1 h-full justify-center" key={index}>
              <Icon
                 icon={amenity.icon}
                 className="text-[#D9D9D9] text-3xl h-full"
