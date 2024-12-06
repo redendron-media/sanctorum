@@ -26,6 +26,7 @@ const Packages = () => {
               {individual.map((plan, index) => (
                 <CarouselItem key={index}>
                   <PricingCard
+                    type="Individual"
                     title={plan.title}
                     price={plan.price}
                     amenities={plan.amenities}
@@ -38,10 +39,11 @@ const Packages = () => {
         )}
         {activeTab === "team" && (
           <Carousel>
-            <CarouselContent className="ml-10">
+            <CarouselContent className="mx-10">
               {team.map((plan, index) => (
                 <CarouselItem key={index}>
                   <PricingCard
+                  type="Team"
                     title={plan.title}
                     price={plan.price}
                     amenities={plan.amenities}
@@ -59,6 +61,7 @@ const Packages = () => {
           <>
             {individual.map((plan, index) => (
               <PricingCard
+                type="Individual"
                 key={index}
                 title={plan.title}
                 price={plan.price}
@@ -72,6 +75,7 @@ const Packages = () => {
           <>
             {team.map((plan, index) => (
               <PricingCard
+              type="Team"
                 key={index}
                 title={plan.title}
                 price={plan.price}

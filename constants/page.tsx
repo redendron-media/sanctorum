@@ -57,7 +57,7 @@ export const team: PricingCardProps[]= [
       ],
     },
     {
-      title: "Quaterly",
+      title: "Quarterly",
       price: "40000",
       amenities: [
         "Dedicated Desk","Hi-speed Internet",
