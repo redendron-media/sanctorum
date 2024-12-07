@@ -3,6 +3,6 @@ export interface PricingCardProps {
     price: string;
     alternate?: boolean;
     amenities: string[]; 
-    type:string;
+    type?:string;
   }
   
