@@ -10,6 +10,7 @@ export const individual: PricingCardProps[]= [
       "Unlimited Free Coffee",
       "24 Hours Validity",
     ],
+    type:"Individual"
   },
   {
     title: "Monthly",
@@ -20,6 +21,7 @@ export const individual: PricingCardProps[]= [
       "Unlimited Free Coffee",
       "Free Office Address","5 hrs Meeting Room","30 days Validity"
     ],
+     type:"Individual"
   },
   {
     title: "Weekly",
@@ -31,6 +33,7 @@ export const individual: PricingCardProps[]= [
       "3 hrs Meeting Room",
       "7 days Validity",
     ],
+     type:"Individual"
   },
 ];
 
@@ -45,6 +48,7 @@ export const team: PricingCardProps[]= [
         "3 hrs Meeting Room",
         "7 days Validity",
       ],
+      type: 'Team'
     },
     {
       title: "Monthly",
@@ -55,6 +59,7 @@ export const team: PricingCardProps[]= [
         "Unlimited Free Coffee",
         "Free Office Address","8 hrs Meeting Room","30 days Validity"
       ],
+      type: 'Team'
     },
     {
       title: "Quarterly",
@@ -64,6 +69,7 @@ export const team: PricingCardProps[]= [
         "Unlimited Free Coffee",
         "Free Office Address","20 hrs Meeting Room",
       ],
+      type: 'Team'
     },
   ];
 
@@ -76,8 +82,9 @@ export const meetingRoom: PricingCardProps[] = [
           "Multipurpose Display",
           "Hi-speed Internet",
           "Unlimited Free Coffee",
-       
         ],
+
+        type:"Meeting"
       },
       {
         title: "Daily",
@@ -89,6 +96,7 @@ export const meetingRoom: PricingCardProps[] = [
             "Hi-speed Internet",
             "Unlimited Free Coffee",
           ],
+          type:"Meeting"
       },
 ]
 

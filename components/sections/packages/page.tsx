@@ -26,7 +26,7 @@ const Packages = () => {
               {individual.map((plan, index) => (
                 <CarouselItem key={index}>
                   <PricingCard
-                    type="Individual"
+                    type= {plan.type}
                     title={plan.title}
                     price={plan.price}
                     amenities={plan.amenities}
@@ -43,7 +43,7 @@ const Packages = () => {
               {team.map((plan, index) => (
                 <CarouselItem key={index}>
                   <PricingCard
-                  type="Team"
+                  type={plan.type}
                     title={plan.title}
                     price={plan.price}
                     amenities={plan.amenities}

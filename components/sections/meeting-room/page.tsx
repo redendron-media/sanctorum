@@ -14,7 +14,7 @@ const MeetingRoom = () => {
             {meetingRoom.map((plan, index) => (
               <CarouselItem key={index}>
                 <PricingCard
-                  type="Meeting"
+                  type={plan.type}
                   title={plan.title}
                   price={plan.price}
                   amenities={plan.amenities}
@@ -28,7 +28,7 @@ const MeetingRoom = () => {
       <div className="hidden lg:flex flex-row gap-8 py-7 justify-center items-center">
         {meetingRoom.map((plan, index) => (
           <PricingCard
-            type="Meeting"
+            type={plan.type}
             key={index}
             title={plan.title}
             price={plan.price}
