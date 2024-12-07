@@ -171,7 +171,7 @@ const Booking: React.FC<Bookingprops> = ({ title, cost, type }) => {
                         </SelectItem>
                         <SelectItem
                           className="cursor-pointer"
-                          value="quarterly"
+                          value="Quarterly"
                         >
                           Quarterly
                         </SelectItem>
