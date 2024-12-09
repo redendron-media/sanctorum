@@ -102,28 +102,43 @@ export const meetingRoom: PricingCardProps[] = [
 
 export const amenities = [
   {
+    title:'Hi-Speed Internet',
+    image: 'internet',
+    desc: 'Work without interruptions.'
+  },
+  {
+    title:'Unlimited Coffee',
+    image: 'coffee',
+    desc: 'Fresh brews. Always available.'
+  },
+  {
+    title:'Common Area',
+    image: 'common',
+    desc: 'A welcoming shared space with comfortable seating.'
+  },
+  {
+    title:'Premium Address',
+    image: 'address',
+    desc: 'A professional address for your business.'
+  },
+  {
     title:'Library',
-    icon: 'ph:books-duotone',
-    desc: 'A peaceful corner stacked with handpicked reads'
+    image: 'library',
+    desc: 'A personal library with handpicked reads.'
   },
   {
-    title:'Coffee',
-    icon: 'tabler:coffee',
-    desc: 'To keep you going'
+    title:'Meeting Room',
+    image: 'meeting',
+    desc: 'A multi-purpose room equipped for your next big idea.'
   },
   {
-    title:'Wifi',
-    icon: 'uil:wifi',
-    desc: 'High speed internet'
+    title:'Dedicated Desks',
+    image: 'desk',
+    desc: 'Reserved spots for uninterrupted work.'
   },
   {
-    title:'Mic',
-    icon: 'mingcute:mic-line',
-    desc: 'Professional audio equipment when you need it'
-  },
-  {
-    title:'Meeting Rooms',
-    icon: 'guidance:meeting-room',
-    desc: 'Privacy and quiet for focused work'
+    title:'Podcasting Setup',
+    image: 'podcast',
+    desc: 'Record and create with ease.'
   },
 ]

@@ -22,6 +22,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Slider } from "../ui/slider";
 
 interface Bookingprops {
   title: string;
@@ -40,14 +41,15 @@ const Booking: React.FC<Bookingprops> = ({ title, cost, type }) => {
     members: z.string().refine((value) => parseInt(value) >= 3, {
       message: "At least 3 members required",
     }),
-    hours: z
-    .string()
-    .refine((value) => {
-      const number = parseInt(value);
-      return number >= 1 && number <= 23;
-    }, {
-      message: "Duration must be between 1 and 23 hours",
-    }),
+    hours: z.string().refine(
+      (value) => {
+        const number = parseInt(value);
+        return number >= 1 && number <= 23;
+      },
+      {
+        message: "Duration must be between 1 and 23 hours",
+      }
+    ),
   });
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -57,7 +59,8 @@ const Booking: React.FC<Bookingprops> = ({ title, cost, type }) => {
       email: "",
       phone: "",
       package: title || "",
-      hours: "1"
+      hours: "1",
+      members:'3'
     },
   });
 
@@ -203,15 +206,37 @@ const Booking: React.FC<Bookingprops> = ({ title, cost, type }) => {
               render={({ field }) => (
                 <FormItem className="w-full">
                   <FormLabel className="text-textdark-200">
-                    No. of members
+                    No. of members (3 - 5)
                   </FormLabel>
                   <FormControl>
+                    <div className="flex flex-col gap-4">
+                    <Slider
+                      min={3}
+                      max={5}
+                     value={[Number(field.value) || 3]} // Provide an array
+                      onValueChange={(value) => field.onChange(value[0])}
+                    />
                     <Input
                       className="bg-surface border-textdark-300 py-1"
                       placeholder="Members"
-                      type="number"
+                      type="number"     
                       {...field}
+                      onChange={(e) => {
+                        const value = e.target.value; // Get user input
+                        if (value === "") {
+                          field.onChange(value); // Allow empty value for editing
+                        } else if ([3, 4, 5].includes(Number(value))) {
+                          field.onChange(Number(value)); // Update form field for valid values
+                        }
+                      }}
+                      onBlur={() => {
+                        if (!field.value || ![3, 4, 5].includes(Number(field.value))) {
+                          field.onChange(3); // Reset to default if invalid on blur
+                        }
+                      }}
                     />
+                    </div>
+                    
                   </FormControl>
                   <FormMessage />
                 </FormItem>

@@ -19,7 +19,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   price,
   amenities,
   alternate,
-  type
+  type,
 }) => {
   function formatIndianPrice(price: number): string {
     return price.toLocaleString("en-IN");
@@ -59,16 +59,16 @@ const PricingCard: React.FC<PricingCardProps> = ({
         ))}
       </div>
       <Dialog>
-        <DialogTrigger className="px-0 w-full">
-          <Button className="w-full"> 
-            <p className="font-im_fell text-base">Book your seat</p>
-          </Button>
+        <DialogTrigger className="w-full bg-primary text-sec  shadow hover:bg-primary/90 px-6 py-2 rounded-lg">
+          <p className="font-im_fell text-base">Book your seat</p>
         </DialogTrigger>
         <DialogContent className="bg-surface">
           <DialogHeader>
-            <DialogDescription/>
-            <DialogTitle className="text-center mobile3">Book your seat</DialogTitle>
-              <Booking cost={price} title={title} type={type}/>
+            <DialogDescription />
+            <DialogTitle className="text-center mobile3">
+              Book your seat
+            </DialogTitle>
+            <Booking cost={price} title={title} type={type} />
           </DialogHeader>
         </DialogContent>
       </Dialog>
