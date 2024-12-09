@@ -82,7 +82,7 @@ const Booking: React.FC<Bookingprops> = ({ title, cost, type }) => {
             name="name"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="text-textdark-200">Name</FormLabel>
+                <FormLabel className="text-textdark-200 text-start  flex w-full">Name</FormLabel>
                 <FormControl>
                   <Input
                     className="bg-surface border-textdark-300 py-1"
@@ -99,7 +99,7 @@ const Booking: React.FC<Bookingprops> = ({ title, cost, type }) => {
             name="email"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="text-textdark-200">Email</FormLabel>
+                <FormLabel className="text-textdark-200 text-start  flex w-full">Email</FormLabel>
                 <FormControl>
                   <Input
                     className="bg-surface border-textdark-300 py-1"
@@ -116,7 +116,7 @@ const Booking: React.FC<Bookingprops> = ({ title, cost, type }) => {
             name="phone"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="text-textdark-200">Phone</FormLabel>
+                <FormLabel className="text-textdark-200 text-start  flex w-full">Phone</FormLabel>
                 <FormControl>
                   <Input
                     className="bg-surface border-textdark-300 py-1"
@@ -133,7 +133,7 @@ const Booking: React.FC<Bookingprops> = ({ title, cost, type }) => {
             name="package"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="text-textdark-200">Package</FormLabel>
+                <FormLabel className="text-textdark-200 text-start  flex w-full">Package</FormLabel>
 
                 <Select
                   onValueChange={field.onChange}
@@ -205,7 +205,7 @@ const Booking: React.FC<Bookingprops> = ({ title, cost, type }) => {
               name="members"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel className="text-textdark-200">
+                  <FormLabel className="text-textdark-200 text-start  flex w-full">
                     No. of members (3 - 5)
                   </FormLabel>
                   <FormControl>
@@ -250,7 +250,7 @@ const Booking: React.FC<Bookingprops> = ({ title, cost, type }) => {
               name="hours"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel className="text-textdark-200">
+                  <FormLabel className="text-textdark-200 text-start  flex w-full">
                     No. of hours
                   </FormLabel>
                   <FormControl>
