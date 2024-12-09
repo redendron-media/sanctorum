@@ -7,7 +7,7 @@ export const individual: PricingCardProps[]= [
     amenities: [
       "Common Area (Shared)",
       "Hi-speed Internet",
-      "Unlimited Free Coffee",
+      "Unlimited Coffee",
       "24 Hours Validity",
     ],
     type:"Individual"
@@ -18,7 +18,7 @@ export const individual: PricingCardProps[]= [
     alternate: true, 
     amenities: [
       "Dedicated Desk","Hi-speed Internet",
-      "Unlimited Free Coffee",
+      "Unlimited Coffee",
       "Free Office Address","5 hrs Meeting Room","30 days Validity"
     ],
      type:"Individual"
@@ -29,7 +29,7 @@ export const individual: PricingCardProps[]= [
     amenities: [
       "Common Area (Shared)",
       "Hi-speed Internet",
-      "Unlimited Free Coffee",
+      "Unlimited Coffee",
       "3 hrs Meeting Room",
       "7 days Validity",
     ],
@@ -44,7 +44,7 @@ export const team: PricingCardProps[]= [
       amenities: [
         "Common Area (Shared)",
         "Hi-speed Internet",
-        "Unlimited Free Coffee",
+        "Unlimited Coffee",
         "3 hrs Meeting Room",
         "7 days Validity",
       ],
@@ -56,7 +56,7 @@ export const team: PricingCardProps[]= [
       alternate: true, 
       amenities: [
         "Dedicated Desk","Hi-speed Internet",
-        "Unlimited Free Coffee",
+        "Unlimited Coffee",
         "Free Office Address","8 hrs Meeting Room","30 days Validity"
       ],
       type: 'Team'
@@ -66,7 +66,7 @@ export const team: PricingCardProps[]= [
       price: "40000",
       amenities: [
         "Dedicated Desk","Hi-speed Internet",
-        "Unlimited Free Coffee",
+        "Unlimited Coffee",
         "Free Office Address","20 hrs Meeting Room",
       ],
       type: 'Team'
@@ -81,7 +81,7 @@ export const meetingRoom: PricingCardProps[] = [
           "Podcasting Setup",
           "Multipurpose Display",
           "Hi-speed Internet",
-          "Unlimited Free Coffee",
+          "Unlimited Coffee",
         ],
 
         type:"Meeting"
@@ -94,7 +94,7 @@ export const meetingRoom: PricingCardProps[] = [
             "Podcasting Setup",
             "Multipurpose Display",
             "Hi-speed Internet",
-            "Unlimited Free Coffee",
+            "Unlimited Coffee",
           ],
           type:"Meeting"
       },
