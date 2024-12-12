@@ -65,7 +65,7 @@ const Hero = () => {
     },
   ];
   return (
-    <section className="flex relative flex-col h-full overflow-hidden items-center w-full gap-4 lg:gap-8 overflow-hidden">
+    <section className="flex relative flex-col h-[85svh] items-center w-full gap-4 lg:gap-8 overflow-hidden">
       <div className="lg:px-10 px-10 py-[72px] lg:py-[180px] z-10 flex flex-col gap-4 lg:gap-8 items-center">
         <h1 className="mobile3 text-white font-im_fell text-balance text-center z-10">
           It&apos;s more than just a desk
