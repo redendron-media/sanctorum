@@ -19,7 +19,7 @@ export const individual: PricingCardProps[]= [
     amenities: [
       "Dedicated Desk","Hi-speed Internet",
       "Unlimited Coffee",
-      "Free Office Address","5 hrs Meeting Room","30 days Validity"
+      "Premium Office Address","5 hrs Meeting Room","30 days Validity"
     ],
      type:"Individual"
   },
@@ -57,7 +57,7 @@ export const team: PricingCardProps[]= [
       amenities: [
         "Dedicated Desk","Hi-speed Internet",
         "Unlimited Coffee",
-        "Free Office Address","8 hrs Meeting Room","30 days Validity"
+        "Premium Office Address","8 hrs Meeting Room","30 days Validity"
       ],
       type: 'Team'
     },
@@ -67,7 +67,7 @@ export const team: PricingCardProps[]= [
       amenities: [
         "Dedicated Desk","Hi-speed Internet",
         "Unlimited Coffee",
-        "Free Office Address","20 hrs Meeting Room",
+        "Premium Office Address","20 hrs Meeting Room",
       ],
       type: 'Team'
     },
