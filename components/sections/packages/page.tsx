@@ -31,6 +31,7 @@ const Packages = () => {
                     price={plan.price}
                     amenities={plan.amenities}
                     alternate={plan.alternate}
+                    link={plan.link}
                   />
                 </CarouselItem>
               ))}
@@ -48,6 +49,7 @@ const Packages = () => {
                     price={plan.price}
                     amenities={plan.amenities}
                     alternate={plan.alternate}
+                    link={plan.link}
                   />
                 </CarouselItem>
               ))}
@@ -67,6 +69,7 @@ const Packages = () => {
                 price={plan.price}
                 amenities={plan.amenities}
                 alternate={plan.alternate}
+                link={plan.link}
               />
             ))}
           </>
@@ -81,6 +84,7 @@ const Packages = () => {
                 price={plan.price}
                 amenities={plan.amenities}
                 alternate={plan.alternate}
+                link={plan.link}
               />
             ))}
           </>

@@ -26,7 +26,7 @@ const Amenities = () => {
             <CarouselItem key={index} className="pl-7">
               <div className="flex flex-col bg-textdark p-4 rounded-lg h-fit gap-7 w-[211px] lg:w-[250px]">
                 <div className="h-[206px] w-[179px] lg:w-[218px] relative object-cover">
-                <Image className="select-none" src={`/amenities/${amenity.image}.webp`} fill alt={amenity.title}/>
+                <Image className="select-none object-cover" src={`/amenities/${amenity.image}.webp`} fill alt={amenity.title}/>
                 </div>
                 <div className="flex flex-col gap-2">                  
                   <h4 className="mobile4 text-white grow select-none">{amenity.title}</h4>

@@ -19,6 +19,7 @@ const MeetingRoom = () => {
                   price={plan.price}
                   amenities={plan.amenities}
                   alternate={plan.alternate}
+                  link={plan.link}
                 />
               </CarouselItem>
             ))}
@@ -34,6 +35,7 @@ const MeetingRoom = () => {
             price={plan.price}
             amenities={plan.amenities}
             alternate={plan.alternate}
+            link={plan.link}
           />
         ))}
       </div>

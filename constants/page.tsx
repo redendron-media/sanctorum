@@ -10,7 +10,8 @@ export const individual: PricingCardProps[]= [
       "Unlimited Coffee",
       "24 Hours Validity",
     ],
-    type:"Individual"
+    type:"Individual",
+    link:'https://tidycal.com/sanctorumcoworking/individual-daily-plan'
   },
   {
     title: "Monthly",
@@ -21,7 +22,8 @@ export const individual: PricingCardProps[]= [
       "Unlimited Coffee",
       "Premium Office Address","5 hrs Meeting Room","30 days Validity"
     ],
-     type:"Individual"
+     type:"Individual",
+     link:'https://tidycal.com/sanctorumcoworking/monthly-individual-plan'
   },
   {
     title: "Weekly",
@@ -33,7 +35,8 @@ export const individual: PricingCardProps[]= [
       "3 hrs Meeting Room",
       "7 days Validity",
     ],
-     type:"Individual"
+     type:"Individual",
+     link:'https://tidycal.com/sanctorumcoworking/individual-weekly-plan'
   },
 ];
 
@@ -48,7 +51,8 @@ export const team: PricingCardProps[]= [
         "3 hrs Meeting Room",
         "7 days Validity",
       ],
-      type: 'Team'
+      type: 'Team',
+      link:'https://tidycal.com/sanctorumcoworking/team-weekly-plan'
     },
     {
       title: "Monthly",
@@ -57,9 +61,10 @@ export const team: PricingCardProps[]= [
       amenities: [
         "Dedicated Desk","Hi-speed Internet",
         "Unlimited Coffee",
-        "Premium Office Address","8 hrs Meeting Room","30 days Validity"
+        "Premium Office Address","9 hrs Meeting Room","30 days Validity"
       ],
-      type: 'Team'
+      type: 'Team',
+      link:'https://tidycal.com/sanctorumcoworking/team-monthly-plan'
     },
     {
       title: "Quarterly",
@@ -67,9 +72,10 @@ export const team: PricingCardProps[]= [
       amenities: [
         "Dedicated Desk","Hi-speed Internet",
         "Unlimited Coffee",
-        "Premium Office Address","20 hrs Meeting Room",
+        "Premium Office Address","18 hrs Meeting Room",
       ],
-      type: 'Team'
+      type: 'Team',
+      link:'https://tidycal.com/sanctorumcoworking/team-monthly-plan'
     },
   ];
 
@@ -83,8 +89,8 @@ export const meetingRoom: PricingCardProps[] = [
           "Hi-speed Internet",
           "Unlimited Coffee",
         ],
-
-        type:"Meeting"
+        type:"Meeting",
+        link:'https://tidycal.com/sanctorumcoworking/multipurpose-room-hourly-plan'
       },
       {
         title: "Daily",
@@ -96,7 +102,8 @@ export const meetingRoom: PricingCardProps[] = [
             "Hi-speed Internet",
             "Unlimited Coffee",
           ],
-          type:"Meeting"
+          type:"Meeting",
+          link:'https://tidycal.com/sanctorumcoworking/multipurpose-room-daily-plan',
       },
 ]
 

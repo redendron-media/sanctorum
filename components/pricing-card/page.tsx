@@ -13,6 +13,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import Booking from "../book-your-seatform/page";
+import Link from "next/link";
 
 const PricingCard: React.FC<PricingCardProps> = ({
   title,
@@ -20,6 +21,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   amenities,
   alternate,
   type,
+  link
 }) => {
   function formatIndianPrice(price: number): string {
     return price.toLocaleString("en-IN");
@@ -58,7 +60,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </div>
         ))}
       </div>
-      <Dialog>
+      <Link href={link}>
+      <Button>Book your seat</Button>
+      </Link>
+      {/* <Dialog>
         <DialogTrigger className=" w-full bg-primary text-sec  shadow hover:bg-primary/90 px-6 py-2 rounded-lg">
           <p className="font-im_fell text-base">Book your seat</p>
         </DialogTrigger>
@@ -71,7 +76,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             <Booking cost={price} title={title} type={type} />
           </DialogHeader>
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
     </Card>
   );
 };
