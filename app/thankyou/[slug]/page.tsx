@@ -4,7 +4,7 @@ import React from "react";
 import { useParams } from "next/navigation";
 import { redirect } from "@/constants/redirect";
 
-function thankyou() {
+function Thankyou() {
   const params = useParams();
   const slug = params?.slug;
 
@@ -80,4 +80,4 @@ function thankyou() {
   );
 }
 
-export default thankyou;
+export default Thankyou;
