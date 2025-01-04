@@ -12,7 +12,7 @@ export default function Home() {
       <Packages />
       <MeetingRoom/>
       <Amenities/>
-      <Events/>
+      {/* <Events/> */}
       <Contact/>
     </main>
   );
