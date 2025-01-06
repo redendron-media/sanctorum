@@ -7,15 +7,20 @@ export async function POST(request: NextRequest) {
     const { name, email, phone } = body;
 
     if (!name || !email || !phone) {
+
+     
       return NextResponse.json(
         { error: "All fields are required" },
         { status: 400 }
       );
     }
+    const [firstname, lastname] = name.split(' ');
 
     const contactPayload = {
       email: email,
       attributes: {
+        FIRSTNAME:firstname,
+        LASTNAME: lastname,
         FULLNAME: name,
         SMS: `+91${phone}`
       },
