@@ -10,7 +10,7 @@ import {
 
 const FloatingButton = () => {
   return (
-    <div>
+    <div className="lg:hidden">
       <Popover>
         <PopoverTrigger className="fixed bottom-10 right-10 z-50 ">
         <div className="size-20 rounded-full bg-[#561C11] hover:bg-[#561C11]/90 shadow-md line-clamp-2 text-balance flex items-center justify-center">
