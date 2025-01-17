@@ -9,10 +9,9 @@ const Header = () => {
     <Link href={'./'}>
     <Image src={'/logo.svg'} width={52} height={52} alt='logo' className='lg:size-20'/>
     </Link>
+    <Link className='mobile4' href={'/about'}>About</Link>
         {/* <Icon icon="ci:hamburger-md" className="text-primary text-4xl" /> */}
-        <div className='flex gap-4'>
-     
-        </div>
+      
        
    </nav>
   )
