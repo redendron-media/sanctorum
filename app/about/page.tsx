@@ -7,7 +7,7 @@ const About = () => {
     <section className='bg-surface px-5 py-3  justify-between flex flex-col-reverse items-center lg:flex-row gap-5 lg:gap-10'>
     <div className=' lg:w-1/2 w-full flex flex-col gap-2.5 lg:gap-6'>
     <h1 className='font-im_fell text-[48px] lg:text-[56px] leading-[48px]'>Sanctorum is more than just a coworking space.</h1>
-    <p >It&apos;s more than desks, chairs, and meeting rooms—it&apos;s a hub of stories, interactions, and possibilities. For us, every conversation and collaboration within these walls is as significant as the work being done. Just as atoms don&apso;t merely build matter but are the essence of it, the interactions here are the fabric of our community.</p>
+    <p >It&apos;s more than desks, chairs, and meeting rooms—it&apos;s a hub of stories, interactions, and possibilities. For us, every conversation and collaboration within these walls is as significant as the work being done. Just as atoms don&apos;t merely build matter but are the essence of it, the interactions here are the fabric of our community.</p>
 </div>
 <Image src={'/about/about1.png'} width={527} height={524} className='lg:w-[361px] lg:h-[574px]' alt='About'/>
     </section>
