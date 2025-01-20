@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const FloatingButton = () => {
   return (                       
-    <div className=" fixed bottom-6 md:bottom-10 right-3 md:right-6 z-50 flex flex-col gap-4">
+    <div className=" fixed bottom-6 md:bottom-10 right-3 md:right-6 z-40 flex flex-col gap-4">
     <Link href={'https://wa.link/gn0lem'} target="_blank">
     <Image src={'/whatsapp.png'} width={80} height={80} alt={`<a href='https://pngtree.com/freepng/whatsapp-icon_8704827.html'>png image from pngtree.com/</a>`}/>
     </Link>

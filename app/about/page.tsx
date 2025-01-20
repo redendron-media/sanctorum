@@ -59,7 +59,7 @@ In my early days as a freelancer, I discovered the profound impact of proximity.
 
 At Sanctorum, we are redefining the workplace experience. Our space is designed for freelancers, entrepreneurs, and creatives to flourish without the limitations of conventional offices. Sanctorum isn&apos;t just about shared desks; it&apos;s about shared aspirations, mutual growth, and fostering a vibrant community. Welcome to a new era of work, right here in Gangtok.</p>
 </div>
-<Image src={'/about/about9.png'} width={527} height={524} alt='About'/>
+<Image src={'/about/about9.png'} width={527} height={524} alt='About'/> 
     </section>
 
    </main>

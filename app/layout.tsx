@@ -3,6 +3,7 @@ import "./globals.css";
 import { IM_Fell_English_SC,IM_Fell_DW_Pica } from "next/font/google";
 import Header from "@/components/header/page";
 import FloatingButton from "@/components/floating-button/page";
+import Footer from "@/components/footer/page";
 
 const im_fell = IM_Fell_English_SC({
   weight: [ "400"],
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Header/>
         <FloatingButton/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
