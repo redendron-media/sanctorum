@@ -22,7 +22,7 @@ interface NavbarScrollProps {
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
   const toggleMenu = () => {
-    setNavbar((prevOpen) => !prevOpen);
+    setNavbar((prevOpen) => !prevOpen); 
   };
 
   const Navbar: React.FC<NavbarScrollProps> = ({ toggleMenu }) => {
