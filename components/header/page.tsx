@@ -22,7 +22,7 @@ interface NavbarScrollProps {
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
   const toggleMenu = () => {
-    setNavbar(!navbar);
+    setNavbar((prevOpen) => !prevOpen);
   };
 
   const Navbar: React.FC<NavbarScrollProps> = ({ toggleMenu }) => {
@@ -74,7 +74,7 @@ const Header = () => {
       {navbar && (
         <div className="fixed top-0 left-0 z-50 h-screen w-full bg-sec">
         <div className="py-4 px-7 flex flex-row justify-between">
-        <Link href={"./"}>
+        <Link href={"./"} onClick={toggleMenu}>
           <Image
             src={"/logo.svg"}
             width={52}
@@ -89,10 +89,10 @@ const Header = () => {
         </div>
 
         <div className="flex flex-col items-center py-24 h-full gap-12">
-        <Link className="mobile4" href={"/"}>
+        <Link onClick={toggleMenu} className="mobile4" href={"/"}>
               Home
             </Link>
-            <Link className="mobile4" href={"/about"}>
+            <Link onClick={toggleMenu} className="mobile4" href={"/about"}>
               About
             </Link>
 
