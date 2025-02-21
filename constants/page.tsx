@@ -94,7 +94,7 @@ export const meetingRoom: PricingCardProps[] = [
       },
       {
         title: "Daily",
-        price: "4500",
+        price: "2000",
         alternate: true, 
         amenities: [
             "Podcasting Setup",
