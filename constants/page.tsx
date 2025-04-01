@@ -15,7 +15,7 @@ export const individual: PricingCardProps[]= [
   },
   {
     title: "Monthly",
-    price: "3500",
+    price: "4000",
     alternate: true, 
     amenities: [
       "Dedicated Desk","Hi-speed Internet",
@@ -27,7 +27,7 @@ export const individual: PricingCardProps[]= [
   },
   {
     title: "Weekly",
-    price: "1000",
+    price: "1500",
     amenities: [
       "Common Area (Shared)",
       "Hi-speed Internet",
