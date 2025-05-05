@@ -53,7 +53,7 @@ const WaitlistForm: React.FC<WaitlistFormProps> = ({
   <div>
     {isSubmitted ? (
        <section className={cn('z-20 items-center flex-col gap-4 flex', orientation === 'vertical'? '':'text-surface')}>
-       <h6 className='mobile6 text-center'>We&apos;re thrilled to confirm your free one-day pass at Sanctorum.</h6>
+       <h6 className='mobile6 text-center'>We&apos;re thrilled to confirm your tour at Sanctorum.</h6>
        <p className="text-center">You will receive an email with further details.</p>
      </section>
     ):(
@@ -143,7 +143,7 @@ const WaitlistForm: React.FC<WaitlistFormProps> = ({
             orientation == "vertical" ? "" : "bg-[#561C11] hover:bg-[#561C11]/90"
           )}
         >
-         {isSubmitting ? 'Submitting...' : 'Get free 1 day pass'}
+         {isSubmitting ? 'Submitting...' : 'Book a tour'}
         </Button>
       </form>
     )}
