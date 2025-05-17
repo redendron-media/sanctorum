@@ -84,7 +84,7 @@ export const redirect = [
         text: "Enjoy all the benefits of Sanctorum for the entire month.",
       },
     ],
-    amount: "6000",
+    amount: "4500",
     image: "/qr/solomonthly.png",
     package: true,
     conclusion: "We’re thrilled to have you as part of the Sanctorum community!",
