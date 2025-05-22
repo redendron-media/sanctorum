@@ -15,7 +15,7 @@ export const individual: PricingCardProps[]= [
   },
   {
     title: "Monthly",
-    price: "4000",
+    price: "4500",
     alternate: true, 
     amenities: [
       "Dedicated Desk","Hi-speed Internet",

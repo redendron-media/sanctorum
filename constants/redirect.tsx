@@ -50,7 +50,7 @@ export const redirect = [
         text: "Use the pass at your convenience over the next week.",
       },
     ],
-    amount: "1000",
+    amount: "1500",
     package: true,
     image: "/qr/soloweekly.png",
     conclusion: "We look forward to hosting you at Sanctorum!",
